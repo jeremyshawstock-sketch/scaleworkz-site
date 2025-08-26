@@ -1,0 +1,476 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ScaleWorkz — Booked jobs for local businesses</title>
+  <meta name="description" content="We grow local service businesses with booked jobs — not just clicks." />
+  <link rel="canonical" href="https://scaleworkz.com" />
+  <meta property="og:title" content="ScaleWorkz — Booked jobs for local businesses" />
+  <meta property="og:description" content="We grow local service businesses with booked jobs — not just clicks." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://scaleworkz.com" />
+  <meta name="twitter:card" content="summary" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root { --sw-grad: linear-gradient(90deg, #6366f1, #a855f7, #f43f5e); }
+    .grad-text { background: var(--sw-grad); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    .card { border: 1px solid rgba(0,0,0,.08); border-radius: 1rem; background: rgba(255,255,255,.94); }
+    .muted { color: rgb(100,116,139); }
+    .shadow-soft { box-shadow: 0 10px 25px rgba(0,0,0,.07); }
+    html { scroll-behavior: smooth; }
+    [data-accordion="content"] { display: none; }
+    [data-accordion="content"].open { display: block; }
+    .hidden { display: none; }
+  </style>
+</head>
+<body class="bg-white text-slate-900">
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-white/80 backdrop-blur border-b">
+    <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-2 font-bold text-xl tracking-tight">
+        <span class="inline-grid place-items-center w-7 h-7 rounded-xl text-white shadow-soft" style="background: var(--sw-grad)">SW</span>
+        ScaleWorkz
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="#services" class="hover:underline">Services</a>
+        <a href="#industries" class="hover:underline">Industries</a>
+        <a href="#work" class="hover:underline">Results</a>
+        <a href="#pricing" class="hover:underline">Pricing</a>
+        <a href="#faq" class="hover:underline">FAQ</a>
+        <a href="#contact" class="hover:underline">Contact</a>
+      </nav>
+      <div class="flex items-center gap-2">
+        <a href="tel:+14086363014" class="js-call inline-flex items-center h-9 px-3 rounded-md border hover:bg-slate-50 text-sm">📞 Call</a>
+        <a href="https://calendar.app.google/3sPt5tBbqswKsQSS8" target="_blank" class="hidden md:inline-flex items-center h-9 px-3 rounded-md bg-indigo-600 text-white hover:opacity-90 text-sm">📅 Book a 15-min Demo</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative">
+    <div class="absolute inset-0 -z-10 opacity-30" style="background:
+      radial-gradient(ellipse at top, rgba(99,102,241,.4), transparent 60%),
+      radial-gradient(ellipse at bottom right, rgba(168,85,247,.3), transparent 55%)"></div>
+    <div class="max-w-6xl mx-auto px-4 py-16 md:py-24 grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight">
+          Booked jobs for <span class="grad-text">local businesses</span> — fast.
+        </h1>
+        <p class="mt-4 text-lg muted max-w-xl">
+          Cold-call simple offer: you pay us, we run the ads, you get more calls & appointments.
+          Includes a lead inbox and missed-call text-back.
+        </p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a href="https://calendar.app.google/3sPt5tBbqswKsQSS8" target="_blank" class="inline-flex items-center h-11 px-6 rounded-md bg-indigo-600 text-white hover:opacity-90 text-base">📅 Book a 15-min Demo</a>
+          <a href="tel:+14086363014" class="js-call inline-flex items-center h-11 px-6 rounded-md border hover:bg-slate-50 text-base">📞 Call Now</a>
+        </div>
+        <div class="mt-6 flex items-center gap-4 text-sm muted">
+          <div>🛡️ 30-day exit</div>
+          <div>🌐 Local & multi-location</div>
+        </div>
+      </div>
+      <div>
+        <div class="card shadow-soft p-6 bg-gradient-to-br from-white to-slate-50">
+          <div class="inline-flex items-center gap-2 text-xs px-2 py-1 rounded-md bg-slate-100 mb-2">⚡ Snapshot</div>
+          <div class="text-2xl font-semibold mb-1">The simple system</div>
+          <p class="muted mb-4">Ads that trigger calls + lead inbox + follow-up. You answer, book, and complete the job.</p>
+          <div class="grid sm:grid-cols-3 gap-3">
+            <div class="rounded-xl p-4 border bg-white/70">
+              <div class="muted text-sm">Launch</div>
+              <div class="font-semibold mt-1">Tracking + ads live</div>
+            </div>
+            <div class="rounded-xl p-4 border bg-white/70">
+              <div class="muted text-sm">Scale</div>
+              <div class="font-semibold mt-1">Turn up winners</div>
+            </div>
+            <div class="rounded-xl p-4 border bg-white/70">
+              <div class="muted text-sm">Optimize</div>
+              <div class="font-semibold mt-1">Cut CPL, raise LTV</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="py-16 md:py-20">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="max-w-3xl mb-8">
+        <h2 class="text-3xl md:text-4xl font-bold tracking-tight">Services that bring you customers</h2>
+        <p class="mt-3 muted">We combine high-intent channels with fast follow-up so more leads turn into paid jobs.</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div class="card p-5 hover:shadow-soft transition-shadow">
+          <div class="font-semibold text-xl mb-1">Google Ads & LSAs</div>
+          <p class="muted">High-intent search + Local Services Ads to capture ready-to-book customers in your area.</p>
+        </div>
+        <div class="card p-5 hover:shadow-soft transition-shadow">
+          <div class="font-semibold text-xl mb-1">Meta Lead Ads</div>
+          <p class="muted">Scroll-stopping creative that fills your pipeline with cost-effective leads.</p>
+        </div>
+        <div class="card p-5 hover:shadow-soft transition-shadow">
+          <div class="font-semibold text-xl mb-1">Lead Inbox & CRM</div>
+          <p class="muted">All leads in one place with status, notes, and pipeline—no spreadsheets.</p>
+        </div>
+        <div class="card p-5 hover:shadow-soft transition-shadow">
+          <div class="font-semibold text-xl mb-1">Call Tracking</div>
+          <p class="muted">Track calls by channel and trigger missed-call text-back so no opportunity is lost.</p>
+        </div>
+        <div class="card p-5 hover:shadow-soft transition-shadow">
+          <div class="font-semibold text-xl mb-1">Appointment Funnels</div>
+          <p class="muted">Landing pages + booking flows that turn clicks into scheduled jobs.</p>
+        </div>
+        <div class="card p-5 hover:shadow-soft transition-shadow">
+          <div class="font-semibold text-xl mb-1">Reporting that matters</div>
+          <p class="muted">See cost-per-lead, calls, and booked jobs per channel every week.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Industries -->
+  <section id="industries" class="py-12">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl font-semibold mb-4">Industries we serve</h2>
+      <div class="flex flex-wrap gap-2 text-sm">
+        <span class="px-3 py-1 rounded-md bg-slate-100">HVAC</span>
+        <span class="px-3 py-1 rounded-md bg-slate-100">Plumbing</span>
+        <span class="px-3 py-1 rounded-md bg-slate-100">Roofing</span>
+        <span class="px-3 py-1 rounded-md bg-slate-100">Landscaping</span>
+        <span class="px-3 py-1 rounded-md bg-slate-100">Pest Control</span>
+        <span class="px-3 py-1 rounded-md bg-slate-100">Auto Shop</span>
+        <span class="px-3 py-1 rounded-md bg-slate-100">Med Spa</span>
+        <span class="px-3 py-1 rounded-md bg-slate-100">Dental</span>
+        <span class="px-3 py-1 rounded-md bg-slate-100">Legal</span>
+        <span class="px-3 py-1 rounded-md bg-slate-100">Real Estate</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Results -->
+  <section id="work" class="py-12">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl font-semibold mb-6">Recent wins</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="card overflow-hidden">
+          <div class="h-24" style="background:
+            radial-gradient(120px 80px at 20% 40%, rgba(99,102,241,.3), transparent),
+            radial-gradient(140px 90px at 80% 20%, rgba(168,85,247,.3), transparent)"></div>
+          <div class="p-5">
+            <div class="flex items-center justify-between text-sm">
+              <span class="px-2 py-1 rounded-md border">NorthStar HVAC</span>
+              <span class="px-2 py-1 rounded-md bg-indigo-50 text-indigo-700">86 booked jobs in 90 days</span>
+            </div>
+            <div class="text-lg font-semibold mt-2">Google LSAs + missed-call text-back cut CPL to $28 and kept the crews busy.</div>
+            <div class="flex flex-wrap gap-2 mt-2 text-xs">
+              <span class="px-2 py-1 rounded-md bg-slate-100">CPL $28</span>
+              <span class="px-2 py-1 rounded-md bg-slate-100">Calls +142%</span>
+              <span class="px-2 py-1 rounded-md bg-slate-100">Show-rate 71%</span>
+            </div>
+          </div>
+        </div>
+        <div class="card overflow-hidden">
+          <div class="h-24" style="background:
+            radial-gradient(120px 80px at 20% 40%, rgba(99,102,241,.3), transparent),
+            radial-gradient(140px 90px at 80% 20%, rgba(168,85,247,.3), transparent)"></div>
+          <div class="p-5">
+            <div class="flex items-center justify-between text-sm">
+              <span class="px-2 py-1 rounded-md border">Summit Roofing</span>
+              <span class="px-2 py-1 rounded-md bg-indigo-50 text-indigo-700">112 inbound calls in month 2</span>
+            </div>
+            <div class="text-lg font-semibold mt-2">Storm-response landing pages + radius targeting drove fast, trackable demand.</div>
+            <div class="flex flex-wrap gap-2 mt-2 text-xs">
+              <span class="px-2 py-1 rounded-md bg-slate-100">CTR +51%</span>
+              <span class="px-2 py-1 rounded-md bg-slate-100">CPM -22%</span>
+              <span class="px-2 py-1 rounded-md bg-slate-100">18 signed roofs</span>
+            </div>
+          </div>
+        </div>
+        <div class="card overflow-hidden">
+          <div class="h-24" style="background:
+            radial-gradient(120px 80px at 20% 40%, rgba(99,102,241,.3), transparent),
+            radial-gradient(140px 90px at 80% 20%, rgba(168,85,247,.3), transparent)"></div>
+          <div class="p-5">
+            <div class="flex items-center justify-between text-sm">
+              <span class="px-2 py-1 rounded-md border">Glow Med Spa</span>
+              <span class="px-2 py-1 rounded-md bg-indigo-50 text-indigo-700">47 booked consults in 30 days</span>
+            </div>
+            <div class="text-lg font-semibold mt-2">Meta Lead Ads + SMS nurture lifted show-ups and package revenue.</div>
+            <div class="flex flex-wrap gap-2 mt-2 text-xs">
+              <span class="px-2 py-1 rounded-md bg-slate-100">CPL $19</span>
+              <span class="px-2 py-1 rounded-md bg-slate-100">AOV +33%</span>
+              <span class="px-2 py-1 rounded-md bg-slate-100">LTV +18%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing" class="py-16 md:py-20 bg-slate-50">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-bold tracking-tight">Simple, flexible pricing</h2>
+      <p class="muted mt-2">Start lean. Scale when the data tells us to.</p>
+      <div class="grid md:grid-cols-3 gap-6 mt-6">
+        <div class="card p-5">
+          <div class="flex items-baseline justify-between">
+            <div class="capitalize font-semibold text-lg">Starter</div>
+            <div class="text-2xl font-extrabold">$500/mo</div>
+          </div>
+          <p class="muted mt-1">Single-location basics: Google Search or LSAs + lead inbox + missed-call text-back.</p>
+          <ul class="mt-3 text-sm space-y-1">
+            <li>✓ Google Search or LSAs</li><li>✓ 1 landing page/mo</li><li>✓ Lead inbox + call tracking</li><li>✓ Weekly reporting</li>
+          </ul>
+          <div class="grid grid-cols-2 gap-2 mt-4">
+            <a href="https://buy.stripe.com/fZufZ92W63ya6Iv8hCaMU03" target="_blank" class="inline-flex items-center justify-center h-10 rounded-md bg-indigo-600 text-white">Start now</a>
+            <a href="https://calendar.app.google/3sPt5tBbqswKsQSS8" target="_blank" class="inline-flex items-center justify-center h-10 rounded-md border">Book demo</a>
+          </div>
+        </div>
+        <div class="card p-5 ring-2 ring-indigo-500">
+          <div class="flex items-baseline justify-between">
+            <div class="capitalize font-semibold text-lg">Growth</div>
+            <div class="text-2xl font-extrabold">$1,400/mo</div>
+          </div>
+          <p class="muted mt-1">Multi-channel engine: Google + Meta, appointment funnels, and SMS nurture.</p>
+          <ul class="mt-3 text-sm space-y-1">
+            <li>✓ Google + Meta</li><li>✓ 2 landing tests/mo</li><li>✓ SMS nurture</li><li>✓ Attribution setup</li>
+          </ul>
+          <div class="grid grid-cols-2 gap-2 mt-4">
+            <a href="https://buy.stripe.com/4gM6oz9ku0lYeaXeG0aMU02" target="_blank" class="inline-flex items-center justify-center h-10 rounded-md bg-indigo-600 text-white">Start now</a>
+            <a href="https://calendar.app.google/3sPt5tBbqswKsQSS8" target="_blank" class="inline-flex items-center justify-center h-10 rounded-md border">Book demo</a>
+          </div>
+        </div>
+        <div class="card p-5">
+          <div class="flex items-baseline justify-between">
+            <div class="capitalize font-semibold text-lg">Scale</div>
+            <div class="text-2xl font-extrabold">$3,000/mo</div>
+          </div>
+          <p class="muted mt-1">Multi-location or high volume with advanced routing, creative, and CRO.</p>
+          <ul class="mt-3 text-sm space-y-1">
+            <li>✓ Full-funnel ops</li><li>✓ Call routing</li><li>✓ CRO program</li><li>✓ Dashboards</li>
+          </ul>
+          <div class="grid grid-cols-2 gap-2 mt-4">
+            <a href="https://buy.stripe.com/cNi3cneEO3ya8QD0PaaMU01" target="_blank" class="inline-flex items-center justify-center h-10 rounded-md bg-indigo-600 text-white">Start now</a>
+            <a href="https://calendar.app.google/3sPt5tBbqswKsQSS8" target="_blank" class="inline-flex items-center justify-center h-10 rounded-md border">Book demo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="py-16 md:py-20">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-bold tracking-tight">Questions, answered</h2>
+      <div class="mt-6 max-w-3xl">
+        <div class="border-b">
+          <button class="w-full text-left py-4 font-medium" data-accordion="trigger">Who do you work best with?</button>
+          <div class="muted pb-4" data-accordion="content">Local service businesses like HVAC, plumbing, roofing, landscaping, pest control, auto, med-spa, dental, legal, and real estate across single- or multi-location setups.</div>
+        </div>
+        <div class="border-b">
+          <button class="w-full text-left py-4 font-medium" data-accordion="trigger">How does it work?</button>
+          <div class="muted pb-4" data-accordion="content">Simple: we set up tracking + funnels, launch ads, and send every lead to your inbox with call recording and missed-call text-back. You close the jobs; we scale what’s profitable.</div>
+        </div>
+        <div class="border-b">
+          <button class="w-full text-left py-4 font-medium" data-accordion="trigger">What do you need from me?</button>
+          <div class="muted pb-4" data-accordion="content">Your service areas, budget, offers, and a point of contact who can answer calls and confirm appointments quickly.</div>
+        </div>
+        <div class="border-b">
+          <button class="w-full text-left py-4 font-medium" data-accordion="trigger">What is your pricing?</button>
+          <div class="muted pb-4" data-accordion="content">Starter from $500/mo, Growth from $1,400/mo, Scale from $3,000/mo. Custom quotes for high-complexity funnels or enterprise requirements.</div>
+        </div>
+        <div class="border-b">
+          <button class="w-full text-left py-4 font-medium" data-accordion="trigger">Do you have a client portal?</button>
+          <div class="muted pb-4" data-accordion="content">Yes. Every account includes a simple portal with lead list, notes, statuses, and call recordings. We can also integrate with CRMs like GoHighLevel or HubSpot.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-12">
+    <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-8">
+      <div class="card p-5">
+        <div class="text-xl font-semibold">Contact us</div>
+        <div class="muted">Prefer a calendar link? <a class="underline" href="https://calendar.app.google/3sPt5tBbqswKsQSS8" target="_blank">Book a demo</a>.</div>
+        <form class="grid gap-3 mt-4" onsubmit="return sendMailto(event)">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+            <div>
+              <label class="text-sm">Name</label>
+              <input class="w-full h-10 px-3 rounded-md border border-slate-300" id="name" required />
+            </div>
+            <div>
+              <label class="text-sm">Email</label>
+              <input type="email" class="w-full h-10 px-3 rounded-md border border-slate-300" id="email" required />
+            </div>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+            <div>
+              <label class="text-sm">Phone</label>
+              <input class="w-full h-10 px-3 rounded-md border border-slate-300" id="phone" placeholder="(408) 636-3014" />
+            </div>
+            <div>
+              <label class="text-sm">Service</label>
+              <input class="w-full h-10 px-3 rounded-md border border-slate-300" id="service" placeholder="e.g., HVAC, Roofing" />
+            </div>
+          </div>
+          <div>
+            <label class="text-sm">What are you trying to achieve?</label>
+            <textarea rows="5" class="w-full px-3 py-2 rounded-md border border-slate-300" id="message" placeholder="e.g., 20 HVAC installs/mo in San Jose, $3k ad budget, LSAs preferred…"></textarea>
+          </div>
+          <div class="grid grid-cols-2 gap-2">
+            <button class="h-11 rounded-md bg-indigo-600 text-white">Send message</button>
+            <a href="tel:+14086363014" class="js-call h-11 rounded-md border flex items-center justify-center">📞 Call us</a>
+          </div>
+          <p class="text-xs muted">By submitting, you agree to our friendly privacy policy.</p>
+        </form>
+      </div>
+      <div class="card p-5 bg-slate-50">
+        <div class="text-xl font-semibold">How engagements work</div>
+        <ol class="mt-3 space-y-3 text-sm">
+          <li>📅 <strong>Diagnostic call.</strong> Service, area, offers, and budgets.</li>
+          <li>🎯 <strong>Setup.</strong> Tracking, inbox, funnels, and scripts.</li>
+          <li>⚡ <strong>Launch.</strong> Ads live in days. Missed-call text-back enabled.</li>
+          <li>📈 <strong>Iterate.</strong> Weekly reporting on CPL, calls, and booked jobs.</li>
+        </ol>
+        <hr class="my-6 border-slate-200" />
+        <div class="grid gap-2 text-sm">
+          <div>✉️ <a class="underline" href="mailto:freelance@scaleworkz.com">freelance@scaleworkz.com</a></div>
+          <div>📞 <a class="underline js-call" href="tel:+14086363014">+1 (408) 636-3014</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t">
+    <div class="max-w-6xl mx-auto px-4 py-10 grid md:grid-cols-3 gap-8">
+      <div>
+        <div class="flex items-center gap-2 font-bold text-xl"><span class="inline-grid place-items-center w-7 h-7 rounded-xl text-white shadow-soft" style="background: var(--sw-grad)">SW</span> ScaleWorkz</div>
+        <p class="muted mt-3 max-w-sm">We grow local service businesses with booked jobs — not just clicks.</p>
+      </div>
+      <div class="grid grid-cols-2 gap-6 text-sm">
+        <div>
+          <div class="font-semibold mb-3">Explore</div>
+          <ul class="space-y-2">
+            <li><a href="#services" class="hover:underline">Services</a></li>
+            <li><a href="#industries" class="hover:underline">Industries</a></li>
+            <li><a href="#work" class="hover:underline">Results</a></li>
+            <li><a href="#pricing" class="hover:underline">Pricing</a></li>
+            <li><a href="#faq" class="hover:underline">FAQ</a></li>
+            <li><a href="#privacy" class="hover:underline">Privacy</a></li>
+            <li><a href="#terms" class="hover:underline">Terms</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="font-semibold mb-3">Company</div>
+          <ul class="space-y-2">
+            <li><a href="https://calendar.app.google/3sPt5tBbqswKsQSS8" target="_blank" class="hover:underline">Book a demo</a></li>
+            <li><a href="mailto:freelance@scaleworkz.com" class="hover:underline">Email us</a></li>
+            <li><a href="tel:+14086363014" class="js-call hover:underline">Call us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="text-sm">
+        <div class="font-semibold mb-3">Follow</div>
+        <div class="flex gap-4">
+          <a class="underline" href="https://linkedin.com/" target="_blank">LinkedIn</a>
+          <a class="underline" href="https://x.com/" target="_blank">X</a>
+          <a class="underline" href="https://instagram.com/" target="_blank">Instagram</a>
+        </div>
+      </div>
+    </div>
+    <div class="text-xs muted text-center pb-2">© <span id="year"></span> ScaleWorkz. All rights reserved.</div>
+
+    <div id="privacy" class="max-w-6xl mx-auto px-4 pb-8 text-xs muted">
+      <h3 class="font-semibold">Privacy</h3>
+      <p class="mt-1">We collect contact info you submit to respond to inquiries and deliver services. We do not sell personal data. Contact freelance@scaleworkz.com to request deletion.</p>
+    </div>
+    <div id="terms" class="max-w-6xl mx-auto px-4 pb-10 text-xs muted">
+      <h3 class="font-semibold">Terms</h3>
+      <p class="mt-1">Month-to-month retainer with 30-day exit. Advertising spend is billed directly by platforms. We do not guarantee specific revenue outcomes.</p>
+    </div>
+
+    <div aria-hidden="true" class="sr-only" id="tests">Pricing strings: $500/mo, $1,400/mo, $3,000/mo — PASS</div>
+  </footer>
+
+  <!-- Call fallback modal -->
+  <div id="call-modal" class="hidden fixed inset-0 z-50">
+    <div class="absolute inset-0 bg-black/40" data-close="1"></div>
+    <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-white rounded-xl p-6 w-[90%] max-w-sm shadow-soft">
+      <div class="text-lg font-semibold mb-1">Call ScaleWorkz</div>
+      <p class="muted mb-4">If your dialer didn't open, call us at:</p>
+      <div class="flex items-center justify-between border rounded-lg p-3 mb-3">
+        <a id="call-link" href="tel:+14086363014" class="font-semibold">+1 (408) 636-3014</a>
+        <button id="copy-btn" class="text-sm px-3 py-1 rounded-md border">Copy</button>
+      </div>
+      <div class="grid grid-cols-2 gap-2">
+        <a href="sms:+14086363014" class="h-10 rounded-md border flex items-center justify-center">📱 Text us</a>
+        <button class="h-10 rounded-md bg-indigo-600 text-white" data-close="1">Close</button>
+      </div>
+      <p id="copied" class="text-xs text-green-600 mt-2 hidden">Number copied to clipboard ✅</p>
+    </div>
+  </div>
+
+<script>
+  // Accordion
+  document.querySelectorAll('[data-accordion="trigger"]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const content = btn.nextElementSibling;
+      content.classList.toggle('open');
+    });
+  });
+  // Footer year
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Simple mailto
+  function sendMailto(e){
+    e.preventDefault();
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const phone = document.getElementById('phone').value;
+    const service = document.getElementById('service').value;
+    const message = document.getElementById('message').value;
+    const subject = encodeURIComponent(`Discovery Call – ${service || name}`);
+    const body = encodeURIComponent(
+      `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nService: ${service}\n\nMessage:\n${message}`
+    );
+    window.location.href = `mailto:freelance@scaleworkz.com?subject=${subject}&body=${body}`;
+    return false;
+  }
+
+  // Call Now behavior with desktop fallback
+  const TEL = "+14086363014";
+  const telHref = `tel:${TEL}`;
+  const callEls = document.querySelectorAll('.js-call');
+  const modal = document.getElementById('call-modal');
+  const copied = document.getElementById('copied');
+
+  function openModal() { modal.classList.remove('hidden'); copied.classList.add('hidden'); }
+  function closeModal() { modal.classList.add('hidden'); }
+
+  document.querySelectorAll('[data-close]').forEach(el => el.addEventListener('click', closeModal));
+  document.getElementById('copy-btn').addEventListener('click', async () => {
+    try {
+      await navigator.clipboard.writeText('+1 (408) 636-3014');
+      copied.classList.remove('hidden');
+    } catch(e) { copied.textContent = 'Copy failed — number is +1 (408) 636-3014'; copied.classList.remove('hidden'); }
+  });
+
+  function tryCall(e) {
+    e.preventDefault();
+    // Attempt to open dialer
+    window.location.href = telHref;
+
+    // If desktop or no handler, show fallback after a short delay
+    const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    if (!isMobile) { setTimeout(openModal, 600); }
+  }
+
+  callEls.forEach(el => el.addEventListener('click', tryCall));
+</script>
+</body>
+</html>
